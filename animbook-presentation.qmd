@@ -1,0 +1,19 @@
+---
+title: "animbook"
+format: revealjs
+---
+
+## Motivation
+
+- osiris data, nytimes plot
+- extend to political data
+
+## Showcase
+
+- reproduces the nytimes plot using wallaby plot
+- sankey algorithm
+- consideration of the plot
+
+## Package
+
+- package structure
