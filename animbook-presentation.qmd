@@ -82,11 +82,11 @@ Supervisor: Dianne Cook
 ## Motivation
 
 ::: {.nonincremental}
-* Animation for visualizing changes in performance measures.
+* Animation for visualizing changes in performance measures
 :::
 
 ::: {.incremental}
-* What others questions we could answer with this visualization?
+* What other questions we could answer with this visualization?
 :::
 
 ::: {.incremental}
@@ -97,7 +97,7 @@ Supervisor: Dianne Cook
 ## Showcase
 
 ::: {.fragment}
-* My attempts to reproduces the animation
+* My attempts to reproduce the animation
 :::
 
 ::: {.columns}
@@ -143,7 +143,7 @@ sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplo
 ## Showcase
 
 ::: {.fragment}
-<h3>Second consideration: Paths</h3>
+<h3>Second consideration: proportional shaded area</h3>
 :::
 
 ::: {.fragment .fade-in}
@@ -177,14 +177,14 @@ sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplo
 ::: {.column width=50%}
 
 ::: {.fragment}
-First steps: Prepare the data
+First step: Prepare the data
 
 * `anim_prep`
 * `anim_prep_cat`
 :::
 
 ::: {.fragment}
-Second steps: Plotting the data
+Second step: Plotting the data
 
 * `kangaroo_plot`
 * `wallaby_plot`
@@ -196,7 +196,7 @@ Second steps: Plotting the data
 ::: {.column width=50%}
 
 ::: {.fragment}
-Third steps: Animating the plot
+Third step: Animating the plot
 
 * `anim_animate`
 :::
