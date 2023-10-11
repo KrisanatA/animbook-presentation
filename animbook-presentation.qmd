@@ -1,11 +1,12 @@
 ---
 format: 
   letterbox-revealjs:
-    css: styles.css
+    css: [styles.css, timeline.css]
     progress: false
     menu: false
     width: 1280
     height: 720
+callout-appearance: simple
 
 ---
 
@@ -204,6 +205,31 @@ Third step: Animating the plot
 :::
 
 :::
+
+
+## Test
+
+::: {.fragment .fade-in}
+title
+:::
+
+::: {.fragment}
+::: {.fade-out}
+details
+:::
+:::
+
+## Test
+
+title
+
+::: {.fragment}
+title2
+:::
+
+
+
+
 
 
 ::: r-stack
