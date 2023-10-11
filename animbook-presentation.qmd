@@ -1,19 +1,219 @@
 ---
-title: "animbook"
-format: revealjs
+format: 
+  letterbox-revealjs:
+    css: styles.css
+    progress: false
+    menu: false
+    width: 1280
+    height: 720
+
 ---
+
+```{r}
+data <- animbook:::sankey_shade(4, c(0.4, 0.3, 0.2, 0.1), c(4, 3, 2, 1))
+
+sankey_shade <- ggplot2::ggplot(data = data, ggplot2::aes(x = x, y = y, group = id, fill = as.factor(id))) +
+  ggplot2::geom_polygon(alpha = 0.1)
+
+ggplot2::ggsave("pictures/sankey_shade.png", sankey_shade, width = 10, height = 7)
+```
+
+
+```{r}
+path <- animbook::sigmoid()
+
+sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplot2::geom_point()
+
+ggplot2::ggsave("pictures/sigmoid_path.png", sigmoid_path, width = 10, height = 7)
+```
+
+
+
+## {}
+
+::: {.columns}
+
+::: {.column width="70%"}
+
+
+::: {.center .title}
+**animbook**: Visualizing changes in performance measures and demographic affiliations using animation
+:::
+
+::: {.center .auther}
+Krisanat Anukarnsakulchularp
+:::
+
+::: {.center .auther}
+Supervisor: Dianne Cook
+::: 
+
+
+:::
+
+::: {.column width="30%"}
+
+![](pictures/fang-wei-lin-H1IRUS1vEFA-unsplash.jpg){.picture}
+
+:::
+:::
+
+
 
 ## Motivation
 
-- osiris data, nytimes plot
-- extend to political data
+::: {.nonincremental}
+* Osiris dataset
+:::
+
+::: {.incremental}
+* Visualizing new listings/ delisted
+:::
+
+::: {.incremental}
+* The New York Times animation
+:::
+
+::: {.incremental}
+![](pictures/nytimes.png){.fragment .background}
+:::
+
+
+## Motivation
+
+::: {.nonincremental}
+* Animation for visualizing changes in performance measures.
+:::
+
+::: {.incremental}
+* What others questions we could answer with this visualization?
+:::
+
+::: {.incremental}
+* Political data: Voter's behaviour
+:::
+
 
 ## Showcase
 
-- reproduces the nytimes plot using wallaby plot
-- sankey algorithm
-- consideration of the plot
+::: {.fragment}
+* My attempts to reproduces the animation
+:::
+
+::: {.columns}
+
+::: {.column width=50% .fragment}
+![](pictures/first-attempts.gif){height=350px width=auto}
+:::
+
+::: {.column width=50% .fragment}
+![](pictures/current-attempts.gif){height=350px width=auto}
+:::
+
+:::
+
+::: {.fragment}
+* How do I get from that to the current one?
+:::
+
+
+## Showcase
+
+::: {.fragment}
+<h3>First consideration: Paths</h3>
+:::
+
+::: {.fragment .fade-in}
+* Emil Hvitfeldt: sankey flow
+
+::: {.fragment .fade-in}
+
+```{.r}
+path <- animbook::sigmoid()
+
+sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplot2::geom_point()
+```
+
+
+![](pictures/sigmoid_path.png){width=50% height=350px}
+:::
+
+:::
+
+## Showcase
+
+::: {.fragment}
+<h3>Second consideration: Paths</h3>
+:::
+
+::: {.fragment .fade-in}
+* Two mapping solutions: both are an extension from the sigmoid paths
+:::
+
+::: {.columns}
+
+::: {.column width=50% .fragment}
+
+1. `geom_line` + `geom_ribbon`
+2. `geom_polygon`
+
+:::
+
+::: {.column width=50% .fragment}
+
+![](pictures/sankey_shade.png){height=100%, width=100%}
+
+:::
+
+:::
+
+
+
 
 ## Package
 
-- package structure
+::: {.columns}
+
+::: {.column width=50%}
+
+::: {.fragment}
+First steps: Prepare the data
+
+* `anim_prep`
+* `anim_prep_cat`
+:::
+
+::: {.fragment}
+Second steps: Plotting the data
+
+* `kangaroo_plot`
+* `wallaby_plot`
+* `funnel_web_plot`
+:::
+
+:::
+
+::: {.column width=50%}
+
+::: {.fragment}
+Third steps: Animating the plot
+
+* `anim_animate`
+:::
+
+:::
+
+:::
+
+
+::: r-stack
+# Thank You {style="float:center;text-align:center;margin-top: 80px;"}
+
+::: {.tenor-gif-embed data-postid="21544032" data-share-method="host" data-aspect-ratio="1" data-width="40%"}
+<a href="https://tenor.com/view/die-gif-21544032">Die GIF</a>from <a href="https://tenor.com/search/die-gifs">Die GIFs</a>
+:::
+
+```{=html}
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+```
+:::
