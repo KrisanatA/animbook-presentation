@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="animbook-presentation_files/libs/clipboard/clipboard.min.js"></script>
-<script src="animbook-presentation_files/libs/quarto-html/tabby.min.js"></script>
-<script src="animbook-presentation_files/libs/quarto-html/popper.min.js"></script>
-<script src="animbook-presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="animbook-presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="animbook-presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="animbook-presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="animbook-presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="test_files/libs/clipboard/clipboard.min.js"></script>
+<script src="test_files/libs/quarto-html/tabby.min.js"></script>
+<script src="test_files/libs/quarto-html/popper.min.js"></script>
+<script src="test_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="test_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="test_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="test_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="test_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.353">
 
-  <title>animbook-presentation</title>
+  <title>Untitled</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="animbook-presentation_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="animbook-presentation_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,78 +28,12 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="animbook-presentation_files/libs/revealjs/dist/theme/quarto.css">
-  <link rel="stylesheet" href="styles.css">
-  <link href="animbook-presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="animbook-presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="animbook-presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="animbook-presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="test_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -389,49 +323,14 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Untitled</h1>
 
-<section id="section" class="slide level2">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<div class="center title">
-<p><strong>animbook</strong>: Visualizing changes in performance measures and demographic affiliations using animation</p>
+<div class="quarto-title-authors">
 </div>
-<div class="center auther">
-<p>Krisanat Anukarnsakulchularp</p>
-</div>
-<div class="center auther">
-<p>Supervisor: Dianne Cook</p>
-</div>
-</div><div class="column" style="width:30%;">
-<p><img data-src="pictures/fang-wei-lin-H1IRUS1vEFA-unsplash.jpg" class="picture"></p>
-</div>
-</div>
-<!-- slide 2 -->
+
 </section>
 <section id="motivation" class="slide level2">
-<h2>Motivation</h2>
-<div class="fragment fade-in">
-<ul>
-<li>Osiris dataset</li>
-</ul>
-</div>
-<div class="fragment fade-in">
-<ul>
-<li>Visualizing new listings/ delisted</li>
-</ul>
-</div>
-<div class="fragment fade-in">
-<ul>
-<li>The New York Time animation</li>
-</ul>
-</div>
-<div class="{incremental}">
-<p><img data-src="pictures/nytimes.png" class="fragment background"></p>
-</div>
-<!-- slide 3 -->
-</section>
-<section id="motivation-1" class="slide level2">
 <h2>Motivation</h2>
 <div class="fragment fade-in">
 <ul>
@@ -440,182 +339,35 @@
 </div>
 <div class="fragment fade-in">
 <ul>
-<li>What other questions we could answer with this visualization?</li>
-</ul>
-</div>
-<div class="fragment fade-in">
-<p style="text-indent: 50px;">
-Voter’s behaviour: Political data
-</p>
-</div>
-<!-- slide 4 -->
-</section>
-<section id="showcase" class="slide level2">
-<h2>Showcase</h2>
-<div class="fragment">
+<li><p>What other questions we could answer with this visualization?</p>
+<div>
 <ul>
-<li>My attempts to reproduce the animation</li>
+<li class="fragment">Voter’s behaviour: Political data</li>
+</ul>
+</div></li>
 </ul>
 </div>
-<div class="columns">
-<div class="column fragment" style="width:45%;">
-<p><img data-src="pictures/first-attempts.gif" height="350"></p>
-</div><div class="column fragment" style="width:5%;">
-<p><img data-src="pictures/right-arrow.png" class="arrow"></p>
-</div><div class="column fragment" style="width:45%;">
-<p><img data-src="pictures/current-attempts.gif" class="gif-right"></p>
-</div>
-</div>
-<!-- slide 5 -->
-</section>
-<section id="showcase-1" class="slide level2">
-<h2>Showcase</h2>
-<h3>
-First consideration: Paths
-</h3>
-<div class="fragment fade-in">
-<ul>
-<li>Emil Hvitfeldt: sankey flow</li>
-</ul>
-<div class="fragment fade-in">
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>path <span class="ot">&lt;-</span> animbook<span class="sc">::</span><span class="fu">sigmoid</span>()</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>sigmoid_path <span class="ot">&lt;-</span> ggplot2<span class="sc">::</span><span class="fu">ggplot</span>(<span class="at">data =</span> path, ggplot2<span class="sc">::</span><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> y)) <span class="sc">+</span> ggplot2<span class="sc">::</span><span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><img data-src="pictures/sigmoid_path.png" style="width:50.0%" height="350"></p>
-</div>
-</div>
-</section>
-<section id="showcase-2" class="slide level2">
-<h2>Showcase</h2>
-<h3>
-First consideration: Paths
-</h3>
-<h3>
-Second consideration: Proportional shaded area
-</h3>
-<div class="fragment fade-in" data-fragment-index="1">
-<ul>
-<li>Two mapping solutions: both are an extension from the sigmoid paths</li>
-</ul>
-</div>
-<div class="{columns}">
-<div class="column" style="width:50%;">
-<div class="fragment" data-fragment-index="2">
-<ol type="1">
-<li><code>geom_line</code> + <code>geom_ribbon</code></li>
-</ol>
-</div>
-<div class="fragment" data-fragment-index="6">
-<ol start="2" type="1">
-<li><code>geom_polygon</code></li>
-</ol>
-</div>
-</div>
-<div class="column" style="width:50%;">
-<div class="fragment" data-fragment-index="3">
-<p><img data-src="pictures/sankey_shade.png" class="sankey"></p>
-</div>
-<div class="fragment" data-fragment-index="4">
-<p><img data-src="pictures/sankey_shade_2.png" class="sankey"></p>
-</div>
-<div class="fragment" data-fragment-index="5">
-<p><img data-src="pictures/sankey_shade_3.png" class="sankey"></p>
-</div>
-<div class="fragment" data-fragment-index="6">
-<p><img data-src="pictures/sankey_shade.png" class="sankey"></p>
-</div>
-<div class="fragment" data-fragment-index="7">
-<p><img data-src="pictures/sankey_shade_4.png" class="sankey"></p>
-</div>
-<div class="fragment" data-fragment-index="8">
-<p><img data-src="pictures/sankey_shade_5.png" class="sankey"></p>
-</div>
-<div class="fragment" data-fragment-index="9">
-<p><img data-src="pictures/sankey_shade_6.png" class="sankey"></p>
-</div>
-</div>
-</div>
-<!-- slide 6 -->
-</section>
-<section id="package" class="slide level2">
-<h2>Package</h2>
-<div class="{columns}">
-<div class="column" style="width:50%;">
-<div class="fragment frade-in">
-<p>First step: Prepare the data</p>
-<ul>
-<li><code>anim_prep</code></li>
-<li><code>anim_prep_cat</code></li>
-</ul>
-</div>
-<div class="fragment frade-in">
-<p>Expected data:</p>
-</div>
-<div class="fragment frade-in">
-<p><img data-src="pictures/data-diagram.png" class="diagram"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="package-1" class="slide level2">
-<h2>Package</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>First step: Prepare the data</p>
-<ul>
-<li><code>anim_prep</code></li>
-<li><code>anim_prep_cat</code></li>
-</ul>
-<p>Second step: Plotting the data</p>
-<div class="fragment">
-<ul>
-<li><code>kangaroo_plot</code></li>
-<li><code>wallaby_plot</code></li>
-<li><code>funnel_web_plot</code></li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="fragment">
-<p>Third step: Animating the plot</p>
-</div>
-<div class="fragment">
-<ul>
-<li><code>anim_animate</code></li>
-</ul>
-</div>
-<div class="fragment">
-<p><img data-src="pictures/enter.gif" class="final"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-1" class="slide level2 r-stack">
-<h2></h2>
-<div class="tenor-gif-embed" data-postid="14869313" data-share-method="host" data-aspect-ratio="1.77778" data-width="50%">
-<p><a href="https://tenor.com/view/the-office-michael-scott-questions-are-there-any-questions-there-will-be-no-questions-gif-14869313">The Office Michael Scott GIF</a>from <a href="https://tenor.com/search/the+office-gifs">The Office GIFs</a></p>
-</div>
-<script type="text/javascript" async="" src="https://tenor.com/embed.js"></script>
-</section>
 <div class="footer footer-default">
 
 </div>
+</section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="animbook-presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="test_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="animbook-presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="test_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="test_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="test_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="test_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="test_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="animbook-presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="animbook-presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="test_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="test_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="test_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="test_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -630,7 +382,7 @@ Second consideration: Proportional shaded area
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -648,7 +400,7 @@ Second consideration: Proportional shaded area
         controlsBackArrows: 'faded',
 
         // Display a presentation progress bar
-        progress: false,
+        progress: true,
 
         // Display the page number of the current slide
         slideNumber: false,
@@ -776,9 +528,9 @@ Second consideration: Proportional shaded area
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1280,
+        width: 1050,
 
-        height: 720,
+        height: 700,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
@@ -810,180 +562,6 @@ Second consideration: Proportional shaded area
         ]
       });
     </script>
-    <script>
-    // Copy over background colors to new div
-    divs = document.querySelectorAll('[data-background-color]');
-
-    Array.from(divs).map(function (x) {
-      const color = x.dataset.backgroundColor;
-
-      var new_div = document.createElement('div');
-      new_div.setAttribute("class", "background-color-div");
-      new_div.style.backgroundColor = color;
-      x.appendChild(new_div);
-      x.removeAttribute("data-background-color");
-    })
-
-    // Remove background colors from backgrounds div
-    Array.from(
-      document.querySelectorAll("[data-background-hash]")
-    ).map(function (x) {
-      x.removeAttribute("data-background-hash");
-      x.style.backgroundColor = null;
-    })
-    </script>
-
-    <script>
-    // Copy over background images to new div
-    divs = document.querySelectorAll('[data-background-image]');
-
-    Array.from(divs).map(function (x) {
-      var new_div = document.createElement('div');
-      new_div.setAttribute("class", "background-image-div");
-
-      if (x.dataset.backgroundImage != undefined) {
-        new_div.style.backgroundImage = "url(" + x.dataset.backgroundImage + ")";
-        x.removeAttribute("data-background-image");
-      }
-      if (x.dataset.backgroundSize != undefined) {
-        new_div.style.backgroundSize = x.dataset.backgroundSize;
-        x.removeAttribute("data-background-size");
-      }
-      if (x.dataset.backgroundPosition != undefined) {
-        new_div.style.backgroundPosition = x.dataset.backgroundPosition;
-        x.removeAttribute("data-background-position");
-      }
-      if (x.dataset.backgroundRepeat != undefined) {
-        new_div.style.backgroundRepeat = x.dataset.backgroundRepeat;
-        x.removeAttribute("data-background-repeat");
-      }
-      if (x.dataset.backgroundOpacity != undefined) {
-        new_div.style.backgroundOpacity = x.dataset.backgroundOpacity;
-        x.removeAttribute("data-background-opacity");
-      }
-
-      x.appendChild(new_div);
-    })
-    </script>
-
-    <script>
-    // Copy over background vidoes
-
-    // Run once when we load
-    var video_div = document.querySelectorAll(".backgrounds video");
-    var slide_div = document.querySelectorAll("[data-background-video]");
-
-    for (let i = 0; i < video_div.length; i++) {
-      video_div[i].setAttribute("class", "background-video-div");
-
-      slide_div[i].appendChild(video_div[i]);
-      slide_div[i].removeAttribute("data-background-video");
-    }
-
-    Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
-
-    // Each time we advance slides, as the background videos aren't loaded
-    // unless they are a few slides away
-    Reveal.on('slidechanged', event => {
-      var video_div = document.querySelectorAll(".backgrounds video");
-      var slide_div = document.querySelectorAll("[data-background-video]");
-
-      for (let i = 0; i < video_div.length; i++) {
-        video_div[i].setAttribute("class", "background-video-div");
-
-        slide_div[i].appendChild(video_div[i]);
-        slide_div[i].removeAttribute("data-background-video");
-      }
-
-      Reveal.getCurrentSlide().querySelectorAll("video").forEach(x => x.play());
-    });
-    </script>
-
-    <script>
-    // Copy over background vidoes
-
-    // Run once when we load
-    var iframe_div = document.querySelectorAll(".backgrounds iframe");
-    var slide_div = document.querySelectorAll("[data-background-iframe]");
-
-    for (let i = 0; i < iframe_div.length; i++) {
-      iframe_div[i].setAttribute("class", "background-iframe-div");
-
-      slide_div[i].appendChild(iframe_div[i]);
-      slide_div[i].removeAttribute("data-background-iframe");
-    }
-
-    // Each time we advance slides, as the background videos aren't loaded
-    // unless they are a few slides away
-    Reveal.on('slidechanged', event => {
-      var iframe_div = document.querySelectorAll(".backgrounds iframe");
-      var slide_div = document.querySelectorAll("[data-background-iframe]");
-
-      for (let i = 0; i < iframe_div.length; i++) {
-        iframe_div[i].setAttribute("class", "background-iframe-div");
-
-        slide_div[i].appendChild(iframe_div[i]);
-        slide_div[i].removeAttribute("data-background-iframe");
-      }
-    });
-    </script>
-
-    <script>
-    // Clean up slide background styles
-    divs = document.querySelectorAll('.slide-background-content');
-    Array.from(divs).map(function (x) {
-      x.style = null;
-    })
-    </script>
-
-    <script>
-    // Move menu button
-    menu_div = document.querySelector(".slide-menu-button");
-    document.querySelector(".slides").appendChild(menu_div);
-
-    // Move progress bar
-    menu_div = document.querySelector(".progress");
-    document.querySelector(".slides").appendChild(menu_div);
-    </script>
-
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

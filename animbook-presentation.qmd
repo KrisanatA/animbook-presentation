@@ -1,24 +1,21 @@
 ---
 format: 
   letterbox-revealjs:
-    css: [styles.css, timeline.css]
+    css: styles.css
     progress: false
     menu: false
     width: 1280
     height: 720
-callout-appearance: simple
-
 ---
 
 ```{r}
 data <- animbook:::sankey_shade(4, c(0.4, 0.3, 0.2, 0.1), c(4, 3, 2, 1))
 
 sankey_shade <- ggplot2::ggplot(data = data, ggplot2::aes(x = x, y = y, group = id, fill = as.factor(id))) +
-  ggplot2::geom_polygon(alpha = 0.1)
+  ggplot2::geom_polygon(alpha = 0.4)
 
 ggplot2::ggsave("pictures/sankey_shade.png", sankey_shade, width = 10, height = 7)
 ```
-
 
 ```{r}
 path <- animbook::sigmoid()
@@ -28,15 +25,10 @@ sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplo
 ggplot2::ggsave("pictures/sigmoid_path.png", sigmoid_path, width = 10, height = 7)
 ```
 
+## 
 
-
-## {}
-
-::: {.columns}
-
+::: columns
 ::: {.column width="70%"}
-
-
 ::: {.center .title}
 **animbook**: Visualizing changes in performance measures and demographic affiliations using animation
 :::
@@ -47,199 +39,237 @@ Krisanat Anukarnsakulchularp
 
 ::: {.center .auther}
 Supervisor: Dianne Cook
-::: 
-
-
+:::
 :::
 
 ::: {.column width="30%"}
-
 ![](pictures/fang-wei-lin-H1IRUS1vEFA-unsplash.jpg){.picture}
-
 :::
 :::
 
-
+<!-- slide 2 -->
 
 ## Motivation
 
-::: {.nonincremental}
-* Osiris dataset
+::: {.fragment .fade-in}
+-   Osiris dataset
 :::
 
-::: {.incremental}
-* Visualizing new listings/ delisted
+::: {.fragment .fade-in}
+-   Visualizing new listings/ delisted
 :::
 
-::: {.incremental}
-* The New York Times animation
+::: {.fragment .fade-in}
+-   The New York Time animation
 :::
 
-::: {.incremental}
+::: {incremental}
 ![](pictures/nytimes.png){.fragment .background}
 :::
 
+<!-- slide 3 -->
 
 ## Motivation
 
-::: {.nonincremental}
-* Animation for visualizing changes in performance measures
+::: {.fragment .fade-in}
+-   Animation for visualizing changes in performance measures
 :::
 
-::: {.incremental}
-* What other questions we could answer with this visualization?
+::: {.fragment .fade-in}
+-   What other questions we could answer with this visualization?
 :::
 
-::: {.incremental}
-* Political data: Voter's behaviour
+::: {.fragment .fade-in}
+<p style="text-indent: 50px;">Voter's behaviour: Political data</p>
 :::
 
+
+
+<!-- slide 4 -->
 
 ## Showcase
 
 ::: {.fragment}
-* My attempts to reproduce the animation
+-   My attempts to reproduce the animation
 :::
 
 ::: {.columns}
-
-::: {.column width=50% .fragment}
-![](pictures/first-attempts.gif){height=350px width=auto}
+::: {.column .fragment width="45%"}
+![](pictures/first-attempts.gif){height="350px" width="auto"}
 :::
 
-::: {.column width=50% .fragment}
-![](pictures/current-attempts.gif){height=350px width=auto}
+::: {.column .fragment width="5%"}
+![](pictures/right-arrow.png){.arrow}
 :::
 
+::: {.column .fragment width="45%"}
+![](pictures/current-attempts.gif){.gif-right}
+:::
 :::
 
-::: {.fragment}
-* How do I get from that to the current one?
-:::
 
+<!-- slide 5 -->
 
 ## Showcase
 
-::: {.fragment}
 <h3>First consideration: Paths</h3>
-:::
 
 ::: {.fragment .fade-in}
-* Emil Hvitfeldt: sankey flow
+-   Emil Hvitfeldt: sankey flow
 
 ::: {.fragment .fade-in}
-
-```{.r}
+``` r
 path <- animbook::sigmoid()
 
 sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplot2::geom_point()
 ```
 
-
-![](pictures/sigmoid_path.png){width=50% height=350px}
+![](pictures/sigmoid_path.png){width="50%" height="350px"}
 :::
-
 :::
 
 ## Showcase
 
-::: {.fragment}
-<h3>Second consideration: proportional shaded area</h3>
+<h3>First consideration: Paths</h3>
+
+<h3>Second consideration: Proportional shaded area</h3>
+
+::: {.fragment .fade-in fragment-index=1}
+-   Two mapping solutions: both are an extension from the sigmoid paths
 :::
 
-::: {.fragment .fade-in}
-* Two mapping solutions: both are an extension from the sigmoid paths
+::: {columns}
+::: {.column width="50%"}
+
+::: {.fragment fragment-index=2}
+1.  `geom_line` + `geom_ribbon`
 :::
 
-::: {.columns}
-
-::: {.column width=50% .fragment}
-
-1. `geom_line` + `geom_ribbon`
-2. `geom_polygon`
-
-:::
-
-::: {.column width=50% .fragment}
-
-![](pictures/sankey_shade.png){height=100%, width=100%}
-
+::: {.fragment fragment-index=6}
+2.  `geom_polygon`
 :::
 
 :::
 
+::: {.column width="50%"}
 
+::: {.fragment fragment-index=3}
+![](pictures/sankey_shade.png){.sankey}
+:::
+
+::: {.fragment fragment-index=4}
+![](pictures/sankey_shade_2.png){.sankey}
+:::
+
+::: {.fragment fragment-index=5}
+![](pictures/sankey_shade_3.png){.sankey}
+:::
+
+::: {.fragment fragment-index=6}
+![](pictures/sankey_shade.png){.sankey}
+:::
+
+::: {.fragment fragment-index=7}
+![](pictures/sankey_shade_4.png){.sankey}
+:::
+
+::: {.fragment fragment-index=8}
+![](pictures/sankey_shade_5.png){.sankey}
+:::
+
+::: {.fragment fragment-index=9}
+![](pictures/sankey_shade_6.png){.sankey}
+:::
+
+:::
+:::
+
+
+
+<!-- slide 6 -->
+
+## Package
+
+::: {columns}
+
+::: {.column width="50%"}
+
+::: {.fragment .frade-in}
+First step: Prepare the data
+
+- `anim_prep`
+- `anim_prep_cat`
+:::
+
+::: {.fragment .frade-in}
+Expected data:
+:::
+
+::: {.fragment .frade-in}
+![](pictures/data-diagram.png){.diagram}
+:::
+
+:::
+
+:::
 
 
 ## Package
 
-::: {.columns}
+::: columns
+::: {.column width="50%"}
 
-::: {.column width=50%}
-
-::: {.fragment}
 First step: Prepare the data
 
-* `anim_prep`
-* `anim_prep_cat`
-:::
+-   `anim_prep`
+-   `anim_prep_cat`
 
-::: {.fragment}
+
+
 Second step: Plotting the data
 
-* `kangaroo_plot`
-* `wallaby_plot`
-* `funnel_web_plot`
+::: {.fragment}
+-   `kangaroo_plot`
+-   `wallaby_plot`
+-   `funnel_web_plot`
+:::
 :::
 
-:::
-
-::: {.column width=50%}
-
+::: {.column width="50%"}
 ::: {.fragment}
 Third step: Animating the plot
-
-* `anim_animate`
-:::
-
-:::
-
-:::
-
-
-## Test
-
-::: {.fragment .fade-in}
-title
 :::
 
 ::: {.fragment}
-::: {.fade-out}
-details
+-   `anim_animate`
 :::
-:::
-
-## Test
-
-title
 
 ::: {.fragment}
-title2
+![](pictures/enter.gif){.final}
 :::
 
-
+:::
+:::
 
 
 
 
 ::: r-stack
-# Thank You {style="float:center;text-align:center;margin-top: 80px;"}
+##
 
-::: {.tenor-gif-embed data-postid="21544032" data-share-method="host" data-aspect-ratio="1" data-width="40%"}
-<a href="https://tenor.com/view/die-gif-21544032">Die GIF</a>from <a href="https://tenor.com/search/die-gifs">Die GIFs</a>
+::: {.tenor-gif-embed data-postid="14869313" data-share-method="host" data-aspect-ratio="1.77778" data-width="50%"}
+<a href="https://tenor.com/view/the-office-michael-scott-questions-are-there-any-questions-there-will-be-no-questions-gif-14869313">The Office Michael Scott GIF</a>from <a href="https://tenor.com/search/the+office-gifs">The Office GIFs</a>
 :::
 
 ```{=html}
 <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 ```
 :::
+
+
+
+
+
+
+
+
