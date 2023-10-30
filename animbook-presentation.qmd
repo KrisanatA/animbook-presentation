@@ -17,7 +17,7 @@ sankey_shade <- ggplot2::ggplot(data = data, ggplot2::aes(x = x, y = y, group = 
 ggplot2::ggsave("pictures/sankey_shade.png", sankey_shade, width = 10, height = 7)
 ```
 
-```{r}
+```{r, eval=FALSE}
 path <- animbook::sigmoid()
 
 sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplot2::geom_point()
@@ -145,7 +145,7 @@ sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplo
 1.  `geom_line` + `geom_ribbon`
 :::
 
-::: {.fragment fragment-index=6}
+::: {.fragment fragment-index=7}
 2.  `geom_polygon`
 :::
 
@@ -154,7 +154,7 @@ sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplo
 ::: {.column width="50%"}
 
 ::: {.fragment fragment-index=3}
-![](pictures/sankey_shade.png){.sankey}
+![](pictures/sigmoid-shade.png){.sankey}
 :::
 
 ::: {.fragment fragment-index=4}
@@ -166,18 +166,22 @@ sigmoid_path <- ggplot2::ggplot(data = path, ggplot2::aes(x = x, y = y)) + ggplo
 :::
 
 ::: {.fragment fragment-index=6}
-![](pictures/sankey_shade.png){.sankey}
+![](pictures/sankey_shade_3.5.png){.sankey}
 :::
 
 ::: {.fragment fragment-index=7}
-![](pictures/sankey_shade_4.png){.sankey}
+![](pictures/sigmoid-shade.png){.sankey}
 :::
 
 ::: {.fragment fragment-index=8}
-![](pictures/sankey_shade_5.png){.sankey}
+![](pictures/sankey_shade_4.png){.sankey}
 :::
 
 ::: {.fragment fragment-index=9}
+![](pictures/sankey_shade_5.png){.sankey}
+:::
+
+::: {.fragment fragment-index=10}
 ![](pictures/sankey_shade_6.png){.sankey}
 :::
 
@@ -250,7 +254,6 @@ Third step: Animating the plot
 
 :::
 :::
-
 
 
 
